@@ -1,0 +1,67 @@
+.welcome-section {
+  height: 660px;
+  position: relative;
+
+  &__bg-slider {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .swiper-wrapper {
+      list-style-type: none;
+      display: flex;
+
+      .swiper-slide {
+        flex-grow: 0;
+        height: 660px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &__top-layer {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .description {
+      margin: 2rem 0;
+    }
+
+    button {
+      margin: 0 7px;
+    }
+  }
+
+  .pagination {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3rem;
+
+    .slider-pagination {
+      position: absolute;
+      right: 0;
+
+      .swiper-pagination-bullet {
+        background-color: transparent;
+        border: 2px solid #fff;
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+        background-color: #fff;
+      }
+    }
+  }
+}

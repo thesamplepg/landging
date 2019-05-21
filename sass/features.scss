@@ -1,0 +1,33 @@
+.features {
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__feature {
+      max-width: 351px;
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+
+      h3 {
+        margin: 1.5rem 0;
+      }
+    }
+
+    @media screen and (max-width: 1050px) {
+      justify-content: space-evenly;
+
+      &__feature {
+        margin: 2rem 0;
+      }
+    }
+
+    @media screen and (max-width: 351px) {
+      width: 100%;
+    }
+  }
+}

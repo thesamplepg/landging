@@ -1,0 +1,27 @@
+.locations__grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px; }
+  .locations__grid .location {
+    position: relative;
+    cursor: pointer; }
+    .locations__grid .location__image {
+      width: 100%; }
+    .locations__grid .location .top-layer {
+      display: flex;
+      flex-direction: column; }
+    .locations__grid .location__backdrop {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.7); }
+    .locations__grid .location__title {
+      padding: 1rem;
+      background-color: #292f36; }
+    .locations__grid .location:hover .top-layer {
+      opacity: 1; }
+
+.locations__button {
+  margin-top: 4rem; }

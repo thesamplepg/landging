@@ -1,0 +1,20 @@
+.features__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .features__list__feature {
+    max-width: 351px;
+    text-align: center; }
+    .features__list__feature img {
+      width: 100%; }
+    .features__list__feature h3 {
+      margin: 1.5rem 0; }
+  @media screen and (max-width: 1050px) {
+    .features__list {
+      justify-content: space-evenly; }
+      .features__list__feature {
+        margin: 2rem 0; } }
+  @media screen and (max-width: 351px) {
+    .features__list {
+      width: 100%; } }

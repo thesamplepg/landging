@@ -1,0 +1,44 @@
+@import "vars";
+
+.locations {
+  &__grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    .location {
+      position: relative;
+      cursor: pointer;
+
+      &__image {
+        width: 100%;
+      }
+
+      .top-layer {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__backdrop {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      &__title {
+        padding: 1rem;
+        background-color: $lightDark;
+      }
+
+      &:hover .top-layer {
+        opacity: 1;
+      }
+    }
+  }
+  &__button {
+    margin-top: 4rem;
+  }
+}

@@ -1,0 +1,19 @@
+.process__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none; }
+
+.process__item {
+  max-width: 254px;
+  text-align: center; }
+  .process__item h3 {
+    color: #292f36;
+    margin: 1.5rem 0;
+    font-weight: bold; }
+
+@media screen and (max-width: 1050px) {
+  .process__items {
+    justify-content: space-evenly; }
+  .process__item {
+    margin: 2rem 0; } }
